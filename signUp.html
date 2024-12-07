@@ -16,11 +16,22 @@
         <div class="container d-flex justify-content-center">
             <div class="item text-center text-white   mt-5">
                 <h1>Smart Login System</h1>
-                <input class="form-control my-3 bg-transparent text-white" type="text" name="name" id="signName" placeholder="Enter your name">
-                <input class="form-control my-3 bg-transparent text-white " type="email" name="email" id="signEmail" placeholder="Enter your email">
-                <input class="form-control my-3 bg-transparent text-white" type="password" name="" id="signPass"    placeholder="Enter your password">
-                <button class="btn btn-outline-primary w-100 my-2">Sign Up</button>
-                <h6>Don’t have an account? <a href="index.html">Sign in</a></h6>    
+                <div class=" mt-3 mb-1">
+                    <input class="form-control  bg-transparent text-white" type="text" name="name" id="signName" placeholder="Enter your name">
+                    <p class="text-danger d-none" id="signUpAlertName">name is not vaild</p>    
+                </div>
+                <div class="mt-3 mb-1">
+                    <input class="form-control  bg-transparent text-white " type="email" name="email" id="signEmail" placeholder="Enter your email">
+                    <p class="text-danger d-none" id="signUpAlertEmail">email is not vaild</p>    
+                    <p class="text-danger d-none" id="signUpAlertEmail2">This email already exists.</p>    
+                </div>
+                <div class="mt-3 mb-1">
+                    <input class="form-control  bg-transparent text-white" type="password" name="password" id="signPass"    placeholder="Enter your password">
+                    <p class="text-danger d-none" id="signUpAlertPass">email is not vaild</p>
+                </div>
+                <p id="signSuccess" class="text-success d-none text-center">success</p>
+                <button  class="btn btn-outline-primary w-100 my-3" id="signUpBtn">Sign Up</button>
+                <h6>Don’t have an account? <a href="index.html" id="signIn">Sign in</a></h6>    
             </div>
         </div>
     </div>
@@ -29,6 +40,6 @@
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/signUp.js"></script>
 </body>
 </html>
